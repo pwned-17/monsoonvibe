@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    color: black;
+    border-top: 2px solid black;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    margin: 5px;
+    font-size: 64px;
+}
+
+header a{
+    color: black;
+    margin-right: 3px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    background-color: #888888;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {{title}}
+        </title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        {{>header}}
+        <h3>
+            {{name}}
+        </h3>
+
+        <div>
+            <form>
+                <input type="text" placeholder="Your location">
+                <button>Search</button>
+            </form>
+            <br/>
+            <h3 id="location"></h3>
+            <h4 id="forecast-summary"></h2>
+            <h4 id="forecast-temperature"></h2>
+            <h4 id="forecast-rain"></h2>
+            <h4 id="forecast-timezone"></h2>
+        </div>
+        {{>footer}}
+    </body>
+    <script src="/js/app.js"></script>
+</html>
