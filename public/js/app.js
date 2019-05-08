@@ -9,10 +9,18 @@ weatherForm.addEventListener("submit", (e)=>{
     const location = search.value
     const url = "/weather?address="+location;
     msgLocation.textContent = "Loading...."
+    document.querySelector("#forecast-summary").textContent = "Summary: " + "loading"
+    document.querySelector("#forecast-temperature").textContent = "Current Temperature: " + "loading"
+    document.querySelector("#forecast-rain").textContent = "Rain probability: " + "loading"
+    document.querySelector("#forecast-timezone").textContent = "Timezone: " + "loading"
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             msgLocation.textContent = data.error
+            document.querySelector("#forecast-summary").textContent = ""
+            document.querySelector("#forecast-temperature").textContent = ""
+            document.querySelector("#forecast-rain").textContent = ""
+            document.querySelector("#forecast-timezone").textContent = ""
         } else {
             forecast = data.forecastData
             msgLocation.textContent = "Location: " + data.location
