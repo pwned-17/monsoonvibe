@@ -1,47 +1,194 @@
 body{
-    height: 100vh;
+    width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    max-width: 400px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 16px;
 }
+
+header{
+    text-align: center;
+}
+
+header h1{
+    margin: 30px auto 10px auto;
+    font-size: 74px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header a{
+    margin:0px 10px;
+    color: black;
+    font-size: 18px;
+    transition-duration: 0.25;
+    text-decoration: none;
+}
+
+.main-body{
+    margin: 0px;
+    padding: 80px 160px;
+    padding-top: 40px
+}
+
+.sub-header{
+    border-bottom: 2px solid black;
+    margin:5px
+}
+.sub-header h3{
+    margin: 0px;
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+.form-div{
+    float: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.form input{
+    height: 60px;
+    display: block;
+    text-align: center;
+    width: 600px;
+    border-radius: 15px;
+    border:1px solid #cccccc;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: lighter;
+    margin: 10px auto;
+}
+
+.form button{
+    display: block;
+    height:50px;
+    width: 150px;
+    background-color: #888888;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 15px auto;
+    align-self: center;
+    color: white;
+    font-size: 24px;
+}
+
+.result{
+    text-align: center;
+}
+
+.result h3{
+    font-size: 34px;
+}
+.result h4{
+    font-size: 28px;
+}
+
+.result-img{
+    width: 200px;
+    margin:0px auto;
+}
+
+.result-img img{
+    width: 200px;
+    height: auto;
+}
+
+
 
 footer{
     position: absolute;
     bottom: 0;
-    color: black;
     border-top: 2px solid black;
-    width: 400px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 10px;
 }
 
-header{
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
+@media only screen and (max-width: 600px) {
+    header h1{
+        font-size: 26px;
+        text-align: center;
+    }
 
-h1{
-    margin: 5px;
-    font-size: 64px;
-}
+    .main-body{
+        margin: 0px;
+        padding: 5px 5px;
+        padding-top: 10px
+    }
 
-header a{
-    color: black;
-    margin-right: 3px;
-}
+    .sub-header h3{
+        font-size: 18px;
+        font-weight: lighter;
+    }
 
-input{
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    padding: 5px;
-}
+    .form-div{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+    }
 
-button{
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 5px;
-    border: 1px solid #cccccc;
-    background-color: #888888;
+    .form{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form input{
+        height: 40px;
+        display: block;
+        text-align: center;
+        width: 90%;
+        border-radius: 5px;
+        border:1px solid #cccccc;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: lighter;
+        margin: 10px auto;
+    }
+
+    .form button{
+        display: block;
+        height:30px;
+        width: 40%;
+        background-color: #888888;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin: 0px auto;
+        margin-top: 10px;
+        align-self: center;
+        color: white;
+        font-size: 18px;
+    }
+
+    .row{
+        margin: 0px !important;
+    }
+
+    .col-sm-5{
+        margin:0px !important;
+    }
+
+    .result h3{
+        font-size: 18px;
+    }
+
+    .result h4{
+        font-size: 16px;
+    }
+
+    .result-img{
+        width: 40%;
+        margin:10px auto;
+    }
+    
+    .result-img img{
+        width: 150px;
+        height: auto;
+        margin: auto;
+    }
 }

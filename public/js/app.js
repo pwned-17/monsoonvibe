@@ -13,6 +13,7 @@ weatherForm.addEventListener("submit", (e)=>{
     document.querySelector("#forecast-temperature").textContent = "Current Temperature: " + "loading"
     document.querySelector("#forecast-rain").textContent = "Rain probability: " + "loading"
     document.querySelector("#forecast-timezone").textContent = "Timezone: " + "loading"
+    document.querySelector("#weather-img").src = "/img/icons/bot.png"
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
@@ -28,6 +29,7 @@ weatherForm.addEventListener("submit", (e)=>{
             document.querySelector("#forecast-temperature").textContent = "Current Temperature: " + forecast.temperature  + " degree Celcius"
             document.querySelector("#forecast-rain").textContent = "Rain probability: " + forecast.rain
             document.querySelector("#forecast-timezone").textContent = "Timezone: " + forecast.timezone
+            document.querySelector("#weather-img").src = "/img/icons/" + forecast.icon + ".png"
         }
     })
 })

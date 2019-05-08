@@ -4,28 +4,54 @@
         <title>
             {{title}}
         </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
         <link rel='shortcut icon' type='image/x-icon' href='/public/img/favicon.ico'/>
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
         {{>header}}
-        <h3>
-            {{name}}
-        </h3>
+        <div class="">
 
-        <div>
-            <form>
-                <input type="text" placeholder="Your location">
-                <button>Search</button>
-            </form>
-            <br/>
-            <h3 id="location"></h3>
-            <h4 id="forecast-summary" class="erase"></h2>
-            <h4 id="forecast-temperature" class="erase"></h2>
-            <h4 id="forecast-rain" class="erase"></h2>
-            <h4 id="forecast-timezone" class="erase"></h2>
+            <div class="main-body">
+
+                <div class="sub-header">
+                    <h3>
+                        {{name}}
+                    </h3>
+                </div>
+
+                <div class="form-div">
+                    <form class="form">
+                        <input type="text" placeholder="Your location"> 
+                        <button>Search</button>
+                    </form>
+                    <br/>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 result">
+                        <h3 id="location"></h3>
+                        <h4 id="forecast-summary" class="erase">HELP US BETTER THE WEATHER</h2>
+                        <h4 id="forecast-temperature" class="erase">SAVE PLANTS</h2>
+                        <h4 id="forecast-rain" class="erase">SAVE EARTH</h2>
+                        <h4 id="forecast-timezone" class="erase">BE THE HERO OF FUTURE</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="result-img">
+                            <img id="weather-img" src="/img/icons/bot.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{>footer}}
         </div>
-        {{>footer}}
     </body>
     <script src="/js/app.js"></script>
 </html>
