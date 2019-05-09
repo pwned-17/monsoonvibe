@@ -28,6 +28,14 @@ header a{
     padding-top: 40px
 }
 
+.main-body p{
+    width: 60%;
+    margin:10px auto;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 60px;
+}
+
 .sub-header{
     border-bottom: 2px solid black;
     margin:5px
@@ -36,6 +44,7 @@ header a{
     margin: 0px;
     font-size: 44px;
     font-weight: lighter;
+    text-align: center;
 }
 
 .form-div{
@@ -122,8 +131,17 @@ footer{
     }
 
     .sub-header h3{
+        text-align: center;
         font-size: 18px;
         font-weight: lighter;
+    }
+
+    .main-body p{
+        width: 80%;
+        margin:10px auto;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
     }
 
     .form-div{
@@ -182,12 +200,12 @@ footer{
     }
 
     .result-img{
-        width: 40%;
+        width: 100px;
         margin:10px auto;
     }
     
     .result-img img{
-        width: 150px;
+        width: 100px;
         height: auto;
         margin: auto;
     }
