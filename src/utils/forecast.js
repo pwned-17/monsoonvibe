@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback)=>{
             const data = {
                 summary: response.body.daily.data[0].summary,
                 temperature: currently.temperature,
-                rain: currently.precipProbability + "%",
+                rain: currently.precipProbability*100 + "%",
                 timezone: response.body.timezone,
                 icon: currently.icon,
             }
