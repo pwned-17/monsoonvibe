@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Iceland', cursive;
 }
 
 header{
@@ -9,15 +9,16 @@ header{
 
 header h1{
     margin: 30px auto 10px auto;
-    font-size: 74px;
+    font-size: 80px;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Iceland', cursive;
+    font-weight: 600 !important;
 }
 
 header a{
     margin:0px 10px;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
     transition-duration: 0.25;
     text-decoration: none;
 }
