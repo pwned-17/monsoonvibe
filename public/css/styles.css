@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    font-family: 'Iceland', cursive;
+    font-family: 'Iceland', cursive !important;
 }
 
 header{
@@ -9,10 +9,10 @@ header{
 
 header h1{
     margin: 30px auto 10px auto;
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
     font-family: 'Iceland', cursive;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
 }
 
 header a{
@@ -50,7 +50,7 @@ header a{
 
 .form-div{
     float: none;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
