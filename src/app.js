@@ -2,6 +2,7 @@ const path = require("path") //its core node module
 const express = require("express")
 const app = express()
 const hbs = require("hbs")
+var helmet = require('helmet')
 const geocode = require("./utils/geocode.js")
 const forecast = require("./utils/forecast.js")
 const port = process.env.PORT || 8080
@@ -16,7 +17,8 @@ app.set("view engine","hbs")
 app.set("views", viewDir)
 hbs.registerPartials(partialsDir)
 
-//setup for ststic dir
+//setup for ststic dir and other middleware
+app.use(helmet())
 app.use(express.static(publicDir))
 
 app.get("", (req,res)=>{
