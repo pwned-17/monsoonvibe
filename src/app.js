@@ -3,6 +3,7 @@ const express = require("express")
 const app = express()
 const hbs = require("hbs")
 var helmet = require('helmet')
+const rateLimit = require("express-rate-limit");
 const geocode = require("./utils/geocode.js")
 const forecast = require("./utils/forecast.js")
 const port = process.env.PORT || 8080
@@ -17,8 +18,14 @@ app.set("view engine","hbs")
 app.set("views", viewDir)
 hbs.registerPartials(partialsDir)
 
+const limiter = rateLimit({
+    windowMs: 5 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests per windowMs
+  });
+
 //setup for ststic dir and other middleware
 app.use(helmet())
+app.use(limiter);
 app.use(express.static(publicDir))
 
 app.get("", (req,res)=>{

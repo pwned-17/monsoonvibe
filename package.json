@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "express-rate-limit": "^5.0.0",
     "hbs": "^4.0.4",
     "helmet": "^3.20.0",
     "request": "^2.88.0"
