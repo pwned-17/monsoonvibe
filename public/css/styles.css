@@ -75,16 +75,8 @@ header a{
 }
 
 .form input{
-    height: 60px;
-    display: block;
+    font-size: 44px !important;
     text-align: center;
-    width: 600px;
-    border-radius: 15px;
-    border:1px solid #cccccc;
-    padding: 20px;
-    font-size: 32px;
-    font-weight: lighter;
-    margin: 10px auto;
 }
 
 .form button{
@@ -176,16 +168,7 @@ footer{
     }
 
     .form input{
-        height: 40px;
-        display: block;
-        text-align: center;
-        width: 90%;
-        border-radius: 5px;
-        border:1px solid #cccccc;
-        padding: 10px;
-        font-size: 24px;
-        font-weight: lighter;
-        margin: 10px auto;
+
     }
 
     .form button{
