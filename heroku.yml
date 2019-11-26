@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+
+#Run section specifies what command will be ran after docker image is made
+#If not specified then the docker image's CMD will be used
+# run: 
+#   web: bundle exec puma _-C config/puma.rb
