@@ -1,6 +1,21 @@
+#used to set add-ons and config vars to create during app provisioning
+setup:
+  addons:
+    #use this feature to for creating add ons
+  
+  config: 
+    #use this place to setup config vars for the project
+    TEST_CONFIG: monsoonVibe
+
+#specifies how to build your app
 build:
+  #Specifies that a docker file needs to be build
   docker:
+    #web defines the path of the docker file that needs to be build
     web: Dockerfile
+  #find out how this config is different from the build.config
+  # config:
+  #   TEST_ENV_VAR: monsoonVibe
 
 #Run section specifies what command will be ran after docker image is made
 #If not specified then the docker image's CMD will be used
